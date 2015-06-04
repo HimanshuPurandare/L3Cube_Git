@@ -1,0 +1,71 @@
+		***Birthday Paradox***
+
+1.Calculate Probability for no of people
+2.Calculate No of People for given Probability
+3.Plot the graph
+4.Exit
+
+Choose the option:
+1
+Enter No. of days in year(365/366)?:
+365
+Enter the number of people(randomly selected) in Group:
+23
+Wait a minute, processing ...
+	*** Precision till 100 decimals ***
+
+
+
+***Probability of at least two people having same birthday = P.A.T.P.H.S.B.***
+
+	The experiment was performed 10000 times by taking group of 23 people on random basis,
+	It was found that 5020 times at least 2 people were having birthday on same day
+	And 4980 times no two people in the group were having birthday on same day.
+	Thus By performing random experiment:PATPHSB= 0.502 ( 50.2 % )
+	By using theory of probability,PATPHSB is:
+
+	0.5072972343239854072254172283370325002359718452929878099019740020018841839181277159923316805370532012 ( 50.7297234324 % )
+
+		***Birthday Paradox***
+
+1.Calculate Probability for no of people
+2.Calculate No of People for given Probability
+3.Plot the graph
+4.Exit
+
+Choose the option:
+2
+Enter No. of days in year(365/366)?:
+366
+
+
+Enter the probability of 'at least two people with same birthday' you want:(Enter value between 0 to 1 )
+0.441
+
+When there are at least 21.0 people in group then probability of two people having same birthday is greater equal 44.100 %
+
+		***Birthday Paradox***
+
+1.Calculate Probability for no of people
+2.Calculate No of People for given Probability
+3.Plot the graph
+4.Exit
+
+Choose the option:
+3   
+Enter No. of days in year(365/366)?:
+366 
+
+	*** Plotting the graph... Please Wait ***
+	
+GLib-GIO-Message: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+		***Birthday Paradox***
+
+1.Calculate Probability for no of people
+2.Calculate No of People for given Probability
+3.Plot the graph
+4.Exit
+
+Choose the option:
+4

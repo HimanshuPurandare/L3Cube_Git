@@ -1,0 +1,11 @@
+#!/bin/bash
+
+now=$(pwd)
+if [ "$#" = 1 ];then 
+	echo "hello"
+	python "$now/svc_mongo.py" "$1"
+else
+	echo "world"
+	python "$now/svc_mongo.py" "$1" "$2"
+fi
+

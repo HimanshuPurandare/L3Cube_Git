@@ -1,0 +1,12 @@
+* Run the run.sh file using the following command and the files to analyse
+  as the command line arguments.
+  
+  # bash run.sh [pathnames_to_files]
+  
+* The result will be stored in packet_details.txt
+
+eg.
+
+	root@paddy:/home/paddy/Problem 3# bash run.sh arp-storm.pcap tcp-ecn-sample.pcap http_witp_jpegs.cap 
+	Check packet_details.txt in your folder
+	root@paddy:/home/paddy/Problem 3# 

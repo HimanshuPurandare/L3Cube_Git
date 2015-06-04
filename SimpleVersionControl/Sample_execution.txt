@@ -1,0 +1,212 @@
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# mongo
+MongoDB shell version: 2.6.3
+connecting to: test
+> show dbs
+abc    0.078GB
+admin  (empty)
+local  0.078GB
+> 
+bye
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# cat test.txt
+Hello World
+This is PICT
+I'm using whatsapp
+hello niranjan
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# cat test2.txt
+Hey there!!!
+Hi! How are you?
+I'm fine Wbu?
+I'm good too!
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test.txt
+hello
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test.txt']
+commit
+None
+Creating first version
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test2.txt
+hello
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test2.txt']
+commit
+None
+Creating first version
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# cat test.txt
+Hello World
+This is PICT
+I'm using whatsapp
+hello niranjan
+I'm good too!
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# cat test2.txt
+Hey there!!!
+Hi! How are you?
+I'm fine Wbu?
+
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test.txt
+hello
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test.txt']
+commit
+{u'_id': ObjectId('55706d25eb2f7533eb890940'), u'lines': {u'hello niranjan\n': 4, u'This is PICT\n': 2, u'Hello World\n': 1, u"I'm using whatsapp\n": 3}, u'version': {u'0': [1, 2, 3, 4]}, u'fileid': u'test.txt'}
+Previous versions are available
+1
+Done!!
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test2.txt
+hello
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test2.txt']
+commit
+{u'_id': ObjectId('55706d2beb2f7533f63fab0c'), u'lines': {u"I'm good too!\n": 4, u'Hey there!!!\n': 1, u'Hi! How are you?\n': 2, u"I'm fine Wbu?\n": 3}, u'version': {u'0': [1, 2, 3, 4]}, u'fileid': u'test2.txt'}
+Previous versions are available
+1
+Done!!
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test
+test2.txt   test2.txt~  test.txt    test.txt~   
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test.txt 1
+world
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test.txt', '1']
+The version is displayed
+{u'_id': ObjectId('55706d25eb2f7533eb890940'), u'lines': {u"I'm using whatsapp\n": 3, u"I'm good too!\n": 5, u'hello niranjan\n': 4, u'Hello World\n': 1, u'This is PICT\n': 2}, u'version': {u'1': [1, 2, 3, 4, 5], u'0': [1, 2, 3, 4]}, u'fileid': u'test.txt'}
+
+
+
+
+1th Version of  test.txt
+Hello World
+
+This is PICT
+
+I'm using whatsapp
+
+hello niranjan
+
+I'm good too!
+
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test.txt 0
+world
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test.txt', '0']
+The version is displayed
+{u'_id': ObjectId('55706d25eb2f7533eb890940'), u'lines': {u"I'm using whatsapp\n": 3, u"I'm good too!\n": 5, u'hello niranjan\n': 4, u'Hello World\n': 1, u'This is PICT\n': 2}, u'version': {u'1': [1, 2, 3, 4, 5], u'0': [1, 2, 3, 4]}, u'fileid': u'test.txt'}
+
+
+
+
+0th Version of  test.txt
+Hello World
+
+This is PICT
+
+I'm using whatsapp
+
+hello niranjan
+
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test2.txt 0
+world
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test2.txt', '0']
+The version is displayed
+{u'_id': ObjectId('55706d2beb2f7533f63fab0c'), u'lines': {u"I'm good too!\n": 4, u'Hey there!!!\n': 1, u'\n': 5, u'Hi! How are you?\n': 2, u"I'm fine Wbu?\n": 3}, u'version': {u'1': [1, 2, 3, 5], u'0': [1, 2, 3, 4]}, u'fileid': u'test2.txt'}
+
+
+
+
+0th Version of  test2.txt
+Hey there!!!
+
+Hi! How are you?
+
+I'm fine Wbu?
+
+I'm good too!
+
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# svc test2.txt 1
+world
+['/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4/svc_mongo.py', 'test2.txt', '1']
+The version is displayed
+{u'_id': ObjectId('55706d2beb2f7533f63fab0c'), u'lines': {u"I'm good too!\n": 4, u'Hey there!!!\n': 1, u'\n': 5, u'Hi! How are you?\n': 2, u"I'm fine Wbu?\n": 3}, u'version': {u'1': [1, 2, 3, 5], u'0': [1, 2, 3, 4]}, u'fileid': u'test2.txt'}
+
+
+
+
+1th Version of  test2.txt
+Hey there!!!
+
+Hi! How are you?
+
+I'm fine Wbu?
+
+
+
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# 
+root@niranjan-Inspiron-5537:/home/niranjan/Downloads/BE/BE Project/L3Cube/Final/Problem 4# mongo
+MongoDB shell version: 2.6.3
+connecting to: test
+> show dbs
+abc    0.078GB
+admin  (empty)
+local  0.078GB
+svc    0.078GB
+> use svc
+switched to db svc
+> show collections
+my_collection
+system.indexes
+> db.my_collection.find().pretty()
+{
+	"_id" : ObjectId("55706d2beb2f7533f63fab0c"),
+	"version" : {
+		"1" : [
+			1,
+			2,
+			3,
+			5
+		],
+		"0" : [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"lines" : {
+		"I'm good too!
+" : 4,
+		"Hey there!!!
+" : 1,
+		"
+" : 5,
+		"Hi! How are you?
+" : 2,
+		"I'm fine Wbu?
+" : 3
+	},
+	"fileid" : "test2.txt"
+}
+{
+	"_id" : ObjectId("55706d25eb2f7533eb890940"),
+	"version" : {
+		"1" : [
+			1,
+			2,
+			3,
+			4,
+			5
+		],
+		"0" : [
+			1,
+			2,
+			3,
+			4
+		]
+	},
+	"lines" : {
+		"I'm good too!
+" : 5,
+		"hello niranjan
+" : 4,
+		"This is PICT
+" : 2,
+		"Hello World
+" : 1,
+		"I'm using whatsapp
+" : 3
+	},
+	"fileid" : "test.txt"
+}
+> 
+

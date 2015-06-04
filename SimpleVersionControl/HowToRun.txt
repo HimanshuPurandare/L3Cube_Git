@@ -1,0 +1,71 @@
+* This document provides steps to 
+  execute the 'SIMPLE VERSION CONTROL'
+
+* Change the user to the 'root' user
+  and run,
+   # chmod +x svc
+   # cp svc /usr/bin
+   
+* Sample execution
+   Consider two files - test.txt and
+   test2.txt
+   
+   test.txt contains:
+   		Hello World
+   		This is PICT
+   		I'm using whatsapp
+   		
+   test2.txt contains:
+   		Hey there!!!
+   		Hi! How are you?
+   		I'm fine. Wbu?
+   		I'm good too.
+   
+  The following command is used to 
+  save the current version	
+  
+   # svc [filename]
+  
+  eg.	
+   # svc test.txt                     
+   # svc test2.txt		
+  
+  Consider that we append a line to test.txt
+  and delete line from test2.txt
+  
+  test.txt contains:
+   		Hello World
+   		This is PICT
+   		I'm using whatsapp
+   		I'm good too.
+   		
+   test2.txt contains:
+   		Hey there!!!
+   		Hi! How are you?
+   		I'm fine. Wbu?
+   		
+   To save the newer versions,
+   
+   # svc test.txt                     
+   # svc test2.txt			
+   
+   For retrieving particular version of the 
+   file(Version numbers begin from 0),
+   
+   # svc [filename] [version_number]
+   
+   eg.
+    # svc test.txt 1
+    Hello World
+	This is PICT
+	I'm using whatsapp
+	I'm good too.
+   		
+	# svc test2.txt 0
+	Hey there!!!
+   	Hi! How are you?
+   	I'm fine. Wbu?
+   	I'm good too.
+   		
+   	
+    
