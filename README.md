@@ -1,8 +1,4 @@
-# L3Cube
-This repository contains 5 assignments for the L3Cube second round. (2015 - 2016 selection)
-
-
-###CODENAME: Engineers_Next_Door
+###GROUP MEMBERS: 
 
 
 * Himanshu Purandare
